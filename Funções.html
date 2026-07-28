@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Funções em Js</h1>
+    <script>
+        function calcularMedia(n1, n2) {
+            return (n1 + n2) / 2;
+        }
+        function verificarPar(num) {
+            if (num % 2 === 0) {
+                return "Par";
+            } else {
+                return "Impar";
+            }
+        }
+        alert("Média: " + calcularMedia(8, 6));
+        alert("Número 7 é: " + verificarPar(7));
+    </script>
+</body>
+</html>

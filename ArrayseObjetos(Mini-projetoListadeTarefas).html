@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Minha Lista de Tarefas</h1>
+    <ul id="lista"></ul>
+
+    <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+
+    <script>
+        let tarefa = [];
+
+        function adicionarTarefa() {
+            let tarefa = document.getElementById("tarefa").value;
+            tarefas.push(tarefa);
+            atualizarLista();
+            document.getElementById("tarefa").value = "";
+        }
+
+        function atualizarLista() {
+            let lista = document.getElementById("Lista");
+            lista.innerHTML = "";
+            tarefas.forEach((t, index) => {
+                lista.innerHTML += `<li>${t}<button onclick="removerTarefa(${index})">Remover</button></li>`;
+            });
+        }
+        function removerTarefas(index) {
+            tarefas.splice(index, 1);
+            atualizarLista();
+        }
+    </script>
+</body>
+</html>
