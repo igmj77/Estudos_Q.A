@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABUADA</title>
+</head>
+<body>
+    <h1>Tabuada de 7</h1>
+    <div id="resultado"></div>
+    <script>
+        const numero = 7; // o número da tabuada
+        const saida = document.getElementById('Resultado');
+        for(let i = 0; i <= 5; i++) {
+            let resultado = numero * i; // 7*0, 7*1, 7*2....
+
+            //mostra no console
+            console.log(`${numero} x ${i} = ${resultado}`);
+
+            //mostra na tela
+            saida.innerHTML += `<p>${numero} x ${i} = ${resultado}</p>`;
+        }
+    </script>
+</body>
+</html>
