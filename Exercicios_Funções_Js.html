@@ -1,0 +1,75 @@
+<!--<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções em Js</title>
+</head>
+<body>
+    <h1>Exercícios em Js</h1>
+    <script>
+        //função que calcula a média de duas notas
+        function calcularMedia(n1, n2) {
+            return (n1 + n2) / 2;
+        }
+        //função que verifica se o número é par ou impar
+        function verificarPar(num) {
+            if(num % 2 === 0) {
+                return "par";
+            } else {
+                return "impar";
+            }
+        }
+        // chamando as funções
+        alert("Média de 8 e 6: " + calcularMedia(8,6));
+        alert("Número 7 é: " + verificarPar(7));
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudação</title>
+</head>
+<body>
+    <h1>Saudação</h1>
+    <script>
+        // função de saudação
+        function saudar(nome) {
+            return "Olá, " + nome + "!";
+        }
+        console.log(saudar("João")); //resultado: Olá, João!
+        console.log(saudar("Israel")); //resultado: Olà, Israel!
+    </script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada de 1 a 10.</title>
+</head>
+<body>
+    <h1>Tabuada de 1 a 10</h1>
+    <script>
+        function tabuada(numero) {
+            // aqui dentro vamos fazer a conta
+            let resultado = ""; // string vazia para ir concatenando
+            for (let n = n; n <= 10; n++) {
+                resultado += `${numero} x ${n} = ${numero * n}\n`; // o \n é quebra de linha
+            }
+            resultado += '==========================';
+            return resultado;
+            // testando a função
+            console.log(tabuada(7));
+            console.log("\n"); // apenas para dar uma linha
+            console.log(tabuada(3));
+        }   
+    </script>    
+</body>
+</html>
