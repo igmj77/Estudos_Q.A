@@ -42,5 +42,5 @@ function saudar(nome) {
     } else { // se ñ for nenhuma das anteriores, então é de 18 até 23.
         saudacao = "boa noite !";
     }
-    return `${saudacao}, ${nome}!`; //junta tudo
+    return `${saudacao}, ${nome} !`; //junta tudo
 }
